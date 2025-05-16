@@ -1,0 +1,11 @@
+version: '3'
+services:
+  benchmark_server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    ports:
+      - "6969:6969"
+    volumes:
+      - ./results:/app/results
+      - ./shared_code:/app/shared_code

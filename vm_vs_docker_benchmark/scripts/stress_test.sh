@@ -1,4 +1,7 @@
 #!/bin/bash
-echo "🔥 Iniciando prueba de estrés de CPU (30 segundos)..." | tee -a logs/stress.log
-sysbench --test=cpu --cpu-max-prime=20000 --time=30 run | tee -a logs/stress.log
-echo "✅ Prueba completada." | tee -a logs/stress.log
+echo "Iniciando prueba de estrés..."
+for i in {1..50}
+do
+  curl -s http://localhost:6969 > /dev/null
+done
+echo "Prueba de estrés finalizada."
