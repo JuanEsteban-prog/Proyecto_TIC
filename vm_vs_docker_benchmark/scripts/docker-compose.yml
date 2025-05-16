@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  vm_vs_docker_benchmark:
+    build: .
+    container_name: vm_vs_docker_benchmark
+    ports:
+      - "6969:6969"
+    volumes:
+      - ./logs:/app/logs
+    restart: always
