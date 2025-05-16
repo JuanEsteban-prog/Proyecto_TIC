@@ -78,7 +78,7 @@ Se generará:
 | Docker  | ✅ Más rápido   | ✅ Menor      | ✅ Más estable  |
 | VM      | ❌ Más lento    | ❌ Mayor      | ❌ Más variable |
 
-Para ver los valores exactos, revisa la salida de [GRAFICA RESULTADOS](/results/comparacion.png)
+Para ver los valores exactos, revisa la salida de [GRAFICA RESULTADOS](/vm_vs_docker_benchmark/results/comparacion.png)
 
 ## ✅ Conclusión
 
