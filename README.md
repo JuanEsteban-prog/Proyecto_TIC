@@ -19,27 +19,6 @@ En este proyecto se realiza una **evaluación comparativa de rendimiento** entre
 
 ---
 
-## ⚙️ Estructura del Proyecto
-
-vm_vs_docker_benchmark/
-├── docker/ # Archivos necesarios para el entorno Docker
-│ ├── Dockerfile
-│ └── ...
-├── scripts/ # Scripts de prueba y recuperación
-│ ├── crash_recovery.ps1
-│ ├── simple_http_server.py
-│ └── load_test.py
-├── results/ # Resultados generados por los tests
-│ ├── docker_results.json
-│ └── vm_results.json
-├── shared_code/ # Código compartido (como C) entre entornos
-│ └── shared_code.c
-├── notebooks/ # Visualización y análisis de datos
-│ └── visualizar_resultados.py
-└── README.md
-
----
-
 ## 🚀 Paso a Paso
 
 ### 1. 🔧 Preparación
@@ -105,7 +84,7 @@ Para ver los valores exactos, revisa la salida de /notebook/visualizar_resultado
 
 Tras realizar la prueba de estrés con múltiples peticiones a un servidor HTTP simple, podemos concluir que:
 
-_Docker ofrece un rendimiento superior a las máquinas virtuales tradicionales en este tipo de tareas livianas y repetitivas._
+**Docker ofrece un rendimiento superior a las máquinas virtuales tradicionales en este tipo de tareas livianas y repetitivas.**
 
 - Su eficiencia proviene del menor consumo de recursos y su cercanía al sistema operativo nativo.
 - Las máquinas virtuales, aunque más aisladas y robustas en algunos escenarios, resultan más pesadas para pruebas de este tipo.
