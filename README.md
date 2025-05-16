@@ -78,7 +78,7 @@ Se generará:
 | Docker  | ✅ Más rápido   | ✅ Menor      | ✅ Más estable  |
 | VM      | ❌ Más lento    | ❌ Mayor      | ❌ Más variable |
 
-Para ver los valores exactos, revisa la salida de [VER] (notebook/visualizar_resultados.py.)
+Para ver los valores exactos, revisa la salida de [VER] (/notebook/visualizar_resultados.py.)
 
 ## ✅ Conclusión
 
