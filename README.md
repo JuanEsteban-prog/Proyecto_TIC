@@ -78,13 +78,15 @@ Se generará:
 | Docker  | ✅ Más rápido   | ✅ Menor      | ✅ Más estable  |
 | VM      | ❌ Más lento    | ❌ Mayor      | ❌ Más variable |
 
-Para ver los valores exactos, revisa la salida de [GRAFICA RESULTADOS](/vm_vs_docker_benchmark/results/comparacion.png)
+Para ver los valores exactos: [GRAFICA RESULTADOS](/vm_vs_docker_benchmark/results/comparacion.png)
 
 ## ✅ Conclusión
 
-Tras realizar la prueba de estrés con múltiples peticiones a un servidor HTTP simple, podemos concluir que:
+Después de llevar a cabo el test de estrés con varias solicitudes a un servidor HTTP sencillo, podemos deducir lo siguiente:
 
-**Docker ofrece un rendimiento superior a las máquinas virtuales tradicionales en este tipo de tareas livianas y repetitivas.**
+Las máquinas virtuales superaron a los contenedores Docker en cuanto al tiempo de respuesta medio para este tipo de actividades livianas y repetitivas.
 
-- Su eficiencia proviene del menor consumo de recursos y su cercanía al sistema operativo nativo.
-- Las máquinas virtuales, aunque más aisladas y robustas en algunos escenarios, resultan más pesadas para pruebas de este tipo.
+- Las VM alcanzaron un tiempo de respuesta medio inferior (cerca de 0.0023 s) en comparación con Docker (cerca de 0.0040 s), lo que señala un incremento en la velocidad en este examen puntual.
+- Por otro lado, Docker demostró un comportamiento más constante y predecible, sin grandes fluctuaciones entre solicitudes, mientras que las máquinas virtuales mostraron variaciones más significativas con algunos picos significativos de latencia.
+
+Esta discrepancia puede ser resultado de la manera en que cada ambiente administra los recursos del sistema: Docker es más liviano y opera directamente en el sistema operativo, en cambio, las Virtual Machines emplean un hipervisor, lo que proporciona mayor aislamiento pero también ofrece variabilidad. Pese a los promedios más altos de las máquinas virtuales, Docker continúa siendo una opción magnífica para contextos donde la consistencia y portabilidad del ambiente de ejecución son esenciales.
