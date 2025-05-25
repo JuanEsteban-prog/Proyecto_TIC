@@ -75,8 +75,8 @@ Se generará:
 
 | Entorno | Tiempo Promedio | Tiempo Mínimo | Tiempo Maximo   |
 | ------- | --------------- | ------------- | --------------- |
-| Docker  | ✅ Más rápido   | ✅ Menor      | ✅ Más estable  |
-| VM      | ❌ Más lento    | ❌ Mayor      | ❌ Más variable |
+| Docker  | ❌ Más lento    | ❌ Mayor      | ✅ Más estable  |
+| VM      | ✅ Más rápido   | ✅ Menor      | ❌ Más variable |
 
 Para ver los valores exactos: [GRAFICA RESULTADOS](/vm_vs_docker_benchmark/results/comparacion.png)
 
